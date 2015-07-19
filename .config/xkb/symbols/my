@@ -1,0 +1,7 @@
+xkb_symbols "my" {
+
+    include "capslock(swapescape)"
+
+    key <AC10> { [ colon, semicolon ] };
+    key <TLDE> { [ asciitilde, grave ] };
+};
