@@ -30,16 +30,6 @@ else
 endif
 " }}}
 
-" Neovim {{{
-if has("nvim")
-    " Esc for exit from terminal
-    tnoremap <Esc> <C-\><C-n>
-
-    " Python path
-    let g:python_host_prog='/usr/local/bin/python'
-endif
-" }}}
-
 " Mouse {{{
 if has('mouse')
     set mouse=a " Enable mouse support
@@ -216,9 +206,6 @@ Plug 'kshenoy/vim-signature'
 " NERDTree, vim-airline, ctrlp, unite, lightline.vim, vimfiler, and flagship
 Plug 'ryanoasis/vim-devicons'
 
-" Vim Emoji
-Plug 'junegunn/vim-emoji'
-
 " An extensible & universal comment vim-plugin that also handles embedded
 " filetypes
 Plug 'tomtom/tcomment_vim'
@@ -247,7 +234,7 @@ Plug 'jonathanfilip/vim-lucius'
 " Javascript indenter (HTML indent is included)
 Plug 'lukaszb/vim-web-indent'
 
-" My scripts collection for comfortable work
+" Aliev scripts collection for comfortable work (Bclose with confirm)
 Plug 'aliev/vim-comfortable'
 
 " A tree explorer plugin for vim.
@@ -278,12 +265,16 @@ Plug 'haya14busa/incsearch.vim'
 "Buffer bye (:Bdelete)
 "Plugin 'moll/vim-bbye'
 
+" Vim to REPL
 Plug 'jpalardy/vim-slime'
 
+" Vim and tmux integration
 Plug 'christoomey/vim-tmux-navigator'
 
+" Autoclose strings
 Plug 'tpope/vim-surround'
 
+" Autoclose pair symbols 
 Plug 'Raimondi/delimitMate'
 
 call plug#end()
@@ -377,25 +368,10 @@ let g:incsearch#auto_nohlsearch = 1
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
-map n  <Plug>(incsearch-nohl-n)
-map N  <Plug>(incsearch-nohl-N)
-map *  <Plug>(incsearch-nohl-*)
-map #  <Plug>(incsearch-nohl-#)
-map g* <Plug>(incsearch-nohl-g*)
-map g# <Plug>(incsearch-nohl-g#)
 " }}}
 
 " | vim-gitgutter | {{{
 let g:gitgutter_max_signs=10000
-
-" Just for fun. Emoji for gitgutter. Works only in Mac ;)
-silent! if emoji#available()
-  let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
-  let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
-  let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
-  let g:gitgutter_sign_modified_removed = emoji#for('collision')
-endif
-" }}}
 
 " | Goto file with line number under cursor | gf | {{{
 nnoremap gf gF
