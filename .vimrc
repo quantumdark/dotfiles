@@ -5,8 +5,6 @@ if has("user_commands")
     let vim_plug_source_file=expand('~/.vim/autoload/plug.vim')
     if !filereadable(vim_plug_source_file)
         echo "Installing vim-plug plugin manager..."
-        silent !mkdir -p ~/.vim/bundle
-        silent !git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
         silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     endif
 endif
