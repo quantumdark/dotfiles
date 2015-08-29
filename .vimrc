@@ -314,7 +314,7 @@ let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 
 " | syntastic | {{{
 " Syntax check mode for python (pip install pylama)
-let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_checkers = ['flake8', 'pylint']
 
 " Syntax check mode for javascript (npm install jslint)
 let g:syntastic_javascript_checkers = ['jslint']
@@ -375,6 +375,10 @@ let g:gitgutter_max_signs=10000
 
 " | Goto file with line number under cursor | gf | {{{
 nnoremap gf gF
+" }}}
+
+" | 'F7' spell check toggle | {{{
+map <F7> :setlocal spell! spelllang=en_us,ru_ru<CR>
 " }}}
 
 " | Paste multiple lines | y, p | {{{
