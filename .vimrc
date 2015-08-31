@@ -284,6 +284,10 @@ call plug#end()
 let g:pymode_indent = 0
 " }}}
 
+" | Fugitive.vim | {{{
+set diffopt+=vertical
+" }}}
+
 " | vim-airline | {{{
 let g:airline_powerline_fonts = 1 " Use airline fonts
 " If you want to auto-completion to work stable in older vim, disable this option
@@ -387,8 +391,8 @@ nnoremap <silent> p p`]
 nnoremap <silent> <Leader>l :set list!<CR>
 " }}}
 
-" | Close buffer with ask save it | leader+w | {{{
-nnoremap <silent> <Leader>w :confirm :Bclose<CR>
+" | Close the current buffer and move to the previous one | leader+w | {{{
+nnoremap <silent> <leader>w :bp <BAR> bd #<CR>}}}"
 " }}}
 
 " | Quickly jump by declarations list | :BTags |{{{
