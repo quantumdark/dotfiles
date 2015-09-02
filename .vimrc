@@ -280,11 +280,6 @@ Plug 'Raimondi/delimitMate'
 
 call plug#end()
 
-" | vim-python-pep8-indent | {{{
-" Disable default Python indentation
-let g:pymode_indent = 0
-" }}}
-
 " | Fugitive.vim | {{{
 set diffopt+=vertical
 " }}}
