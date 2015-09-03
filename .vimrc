@@ -275,6 +275,9 @@ Plug 'christoomey/vim-tmux-navigator'
 " Autoclose strings
 Plug 'tpope/vim-surround'
 
+" Jinja2 syntax
+Plug 'Glench/Vim-Jinja2-Syntax'
+
 " Autoclose pair symbols 
 Plug 'Raimondi/delimitMate'
 
