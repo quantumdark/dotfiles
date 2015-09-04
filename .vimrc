@@ -281,6 +281,10 @@ Plug 'Glench/Vim-Jinja2-Syntax'
 " Autoclose pair symbols 
 Plug 'Raimondi/delimitMate'
 
+" Autoformatters for my shiny new code
+" for puthon need to install pip install autopep8
+Plug 'Chiel92/vim-autoformat'
+
 call plug#end()
 
 " | Fugitive.vim | {{{
