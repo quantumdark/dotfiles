@@ -246,6 +246,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " A command-line fuzzy finder written in Go
 Plug 'junegunn/fzf', {'do': 'yes \| ./install'}
+Plug 'junegunn/fzf.vim'
 
 " Plug to display the indention levels with thin vertical lines
 Plug 'Yggdroot/indentLine'
@@ -403,7 +404,7 @@ nnoremap <silent> <Leader>s :BTags<CR>
 " }}}
 
 " | Buffer list | leader+b | {{{
-nnoremap <silent> <Leader>b :BList<CR>
+nnoremap <silent> <Leader>b :Buffers<CR>
 " }}}
 
 " | Open files in splits | leader+f, leader+v | {{{
