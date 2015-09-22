@@ -408,13 +408,7 @@ nnoremap <silent> <Leader>b :Buffers<CR>
 " }}}
 
 " | Open files in splits | leader+f, leader+v | {{{
-nnoremap <silent> <Leader>f :call fzf#run({
-\   'down': '40%',
-\   'sink': 'e' })<CR>
-
-nnoremap <silent> <Leader>v :call fzf#run({
-\   'right': winwidth('.') / 2,
-\   'sink':  'vertical botright split' })<CR>
+nnoremap <silent> <Leader>f :Files<CR>
 " }}}
 
 " | Search word under cursor by using Ag | leader + a | {{{
