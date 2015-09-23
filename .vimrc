@@ -381,8 +381,9 @@ let g:gitgutter_max_signs=10000
 nnoremap gf gF
 " }}}
 
-" | 'F7' spell check toggle | {{{
+" | Function keys toggles | {{{
 map <F7> :setlocal spell! spelllang=en_us,ru_ru<CR>
+set pastetoggle=<F2>
 " }}}
 
 " | Paste multiple lines | y, p | {{{
