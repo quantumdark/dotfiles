@@ -363,7 +363,9 @@ nnoremap <silent> <Leader>E :NERDTreeFind<CR>
 " }}}
 
 " | ultisnips | {{{
+let g:UltiSnipsExpandTrigger='<tab>'
 let g:UltiSnipsJumpForwardTrigger='<tab>'
+let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 " }}}
 
 " | incsearch.vim | / ? g/ n N * # g* g# | {{{
