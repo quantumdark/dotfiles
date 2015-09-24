@@ -282,6 +282,10 @@ Plug 'Raimondi/delimitMate'
 " for puthon need to install pip install autopep8
 Plug 'Chiel92/vim-autoformat'
 
+" Support snippets engine and library
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
 call plug#end()
 
 " | Fugitive.vim | {{{
