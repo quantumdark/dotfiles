@@ -241,18 +241,12 @@ Plug 'aliev/vim-comfortable'
 " A tree explorer plugin for vim.
 Plug 'scrooloose/nerdtree'
 
-" A plugin of NERDTree showing git status
-Plug 'Xuyuanp/nerdtree-git-plugin'
-
 " A command-line fuzzy finder written in Go
 Plug 'junegunn/fzf', {'do': 'yes \| ./install'}
 Plug 'junegunn/fzf.vim'
 
 " Plug to display the indention levels with thin vertical lines
 Plug 'Yggdroot/indentLine'
-
-" Improvement over standard matchparen plugin
-Plug 'vim-scripts/matchparenpp'
 
 " True Sublime Text style multiple selections for Vim
 Plug 'terryma/vim-multiple-cursors'
@@ -316,7 +310,6 @@ let g:indentLine_char= '│'
 " }}}
 
 " | vim-devicons | {{{
-let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 " }}}
 
