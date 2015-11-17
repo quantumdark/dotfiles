@@ -1,5 +1,7 @@
 scriptencoding utf-8
 
+set nocompatible
+
 " Install vim-plug if not already installed
 if has("user_commands")
     let vim_plug_source_file=expand('~/.vim/autoload/plug.vim')
