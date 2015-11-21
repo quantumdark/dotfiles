@@ -282,6 +282,9 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
+" Allows you to use <Tab> for all your insert completion needs
+Plug 'ervandew/supertab'
+
 call plug#end()
 
 " | Fugitive.vim | {{{
