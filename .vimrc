@@ -199,6 +199,8 @@ call plug#begin('~/.vim/plugged')
 
 " Lean & mean status/tabline for vim that's light as air
 Plug 'bling/vim-airline'
+" Airline themes moved to separate repo
+Plug 'vim-airline/vim-airline-themes'
 
 " Plug to toggle, display and navigate marks
 Plug 'kshenoy/vim-signature'
